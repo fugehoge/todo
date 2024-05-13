@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>ToDoリストページ</title>
+</head>
+<body>
+	<h1>投稿されたToDo</h1>
+	 <div th:each="todo:${todos}">
+	 <p th:text="${todo.title}"></p>
+     <p><small>時間: <span th:text="${todo.time_limit}"></span></small></p>
+     </div>
+	
+	<a href="/">トップページへ</a>
+
+</body>
+</html>

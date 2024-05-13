@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>投稿ページ</title>
+</head>
+<body>
+	<h1>やることを投稿してね</h1>
+	  <form action="/complete" method="post">
+        <textarea name="title" required></textarea>
+        <input type="time" name="time_limit" placeholder="時間" required>
+        <button type="submit">投稿</button>
+      </form>
+	
+	<a href="/">トップページへ</a>
+	<a href="/view">リストページへ</a>
+
+</body>
+</html>
